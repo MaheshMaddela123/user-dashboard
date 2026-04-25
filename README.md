@@ -1,16 +1,76 @@
-# React + Vite
+# User Management Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive and dynamic React application that fetches, displays, and manages user data from an external API (`jsonplaceholder.typicode.com`). It includes features like searching, sorting, and viewing detailed user profiles, utilizing modern React practices.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **User Directory**: View a list of users with their basic information.
+- **Search**: Case-insensitive real-time search functionality by user name.
+- **Sort**: Alphabetical sorting (A-Z and Z-A) by user name.
+- **Detailed User Profiles**: Click on any user card to view comprehensive contact and company details.
+- **State Management**: Built efficiently using the React Context API to manage global state (users, loading, error, search, sort).
+- **Responsive Design**: Fully responsive layout optimized for mobile, tablet, and desktop, built entirely with standard custom CSS.
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Framework**: [React.js](https://reactjs.org/) (Functional Components, Hooks)
+- **Tooling**: [Vite](https://vitejs.dev/)
+- **Routing**: [React Router](https://reactrouter.com/)
+- **State Management**: Context API
+- **Styling**: Standard custom CSS (Variables, Grid, Flexbox)
+- **Icons**: [Lucide React](https://lucide.dev/)
 
-## Expanding the ESLint configuration
+## Prerequisites
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
+
+## Installation Process
+
+Follow these steps to get the project running locally:
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/MaheshMaddela123/user-dashboard.git
+   cd user-dashboard
+   ```
+
+2. **Install dependencies**
+   Run the following command to install all required packages:
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**
+   ```bash
+   npm run dev
+   ```
+
+4. **View the application**
+   Open your browser and navigate to the URL provided in your terminal (usually `http://localhost:5173/`).
+
+## Project Structure
+
+The project is structured in a highly modular way, where every component and page has its own folder containing an `index.jsx` and an `index.css`:
+
+```
+src/
+├── components/          # Reusable UI components
+│   ├── ErrorMessage/    # API error fallback
+│   ├── Home/            # Main directory components (Search, Filter)
+│   ├── Loader/          # Loading spinner
+│   ├── Navbar/          # Top navigation bar
+│   ├── UserCard/        # Individual user summary card
+│   └── UserDetail/      # User profile details layout
+├── context/             # Global State Management
+│   └── UserContext.jsx  # Context Provider for user data
+├── index.css            # Global CSS variables and resets
+├── App.jsx              # Application routing setup
+└── main.jsx             # React entry point
+```
+
+## Available Scripts
+
+- `npm run dev` - Starts the development server with Hot Module Replacement.
+- `npm run build` - Builds the application for production in the `dist/` directory.
+- `npm run lint` - Runs ESLint to check for code quality issues.
+- `npm run preview` - Previews the production build locally.
