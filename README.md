@@ -13,7 +13,7 @@ A responsive and dynamic React application that fetches, displays, and manages u
 
 ## Tech Stack
 
-- **Framework**: [React.js](https://reactjs.org/) (Functional Components, Hooks)
+- **Framework**: [React.js](https://reactjs.org/)
 - **Tooling**: [Vite](https://vitejs.dev/)
 - **Routing**: [React Router](https://reactrouter.com/)
 - **State Management**: Context API
