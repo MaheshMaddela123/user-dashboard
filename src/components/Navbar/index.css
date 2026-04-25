@@ -1,0 +1,14 @@
+.navbar {
+  background-color: lightblue;
+}
+
+.navContainer {
+  padding: 15px;
+}
+
+.logo {
+  display: flex;
+  gap: 10px;
+  font-weight: bold;
+  color: blue;
+}
