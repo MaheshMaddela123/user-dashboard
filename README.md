@@ -18,7 +18,6 @@ A responsive and dynamic React application that fetches, displays, and manages u
 - **Routing**: [React Router](https://reactrouter.com/)
 - **State Management**: Context API
 - **Styling**: Standard custom CSS (Variables, Grid, Flexbox)
-- **Icons**: [Lucide React](https://lucide.dev/)
 
 ## Prerequisites
 
